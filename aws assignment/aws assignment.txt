@@ -1,0 +1,31 @@
+                  ------------------------------ AWS CLOUD COMPUTING ASSIGNMENT ANSWER-------------------------------------------
+
+
+
+Amazon CloudFront works seamlessly with Amazon Simple Storage Service (S3) to accelerate the delivery of your web content and reduce the load on your origin servers.
+
+ The  steps are:
+1. Go to the AWS Console
+2. Create an Amazon S3 bucket
+3. Create an Amazon CloudFront distribution
+4. Specify your distribution settings
+5. Configure your origin
+6. Configure Origin Access Identity
+7. Configure default cache behavior
+8. Configure your TTLs
+9. Configure additional features
+10. Test your CloudFront distribution
+Additionally, we created an Amazon CloudFormation Template to help you get started. This template will launch a S3 bucket to store your static files at scale then
+ deliver that content to your users over the CloudFront Content Delivery Network (CDN). The CloudFront edge locations will cache and deliver your content closer to 
+your users to reduce latency and offload capacity from your origin. CloudFront will also restrict access to your S3 bucket to only CloudFront endpoints rendering your
+ content and application more secure and performant. Lastly, because AWS does not charge for data transfers between an AWS-hosted origin such as Amazon S3 and 
+CloudFront, origin fetches are cost-effective.
+
+                _____________________USE CASE______________________________
+
+serve video on demand or live streaming video.
+CloudFront offers several options for streaming your media to global viewers both pre recorded files and live events.
+For video on demand (VOD) streaming, you can use CloudFront to stream in common formats such as MPEG DASH, Apple HLS, Microsoft Smooth Streaming, and CMAF, to any
+ device.
+For broadcasting a live stream, you can cache media fragments at the edge, so that multiple requests for the manifest file that delivers the fragments in the right
+ order can be combined, to reduce the load on your origin server.
